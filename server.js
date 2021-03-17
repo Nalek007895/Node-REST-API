@@ -4,7 +4,7 @@ const express = require('express')
 const app = express()
 const mongoose = require('mongoose')
 
-const DATABASE_URL = process.env.DATABASE_URL || "mongodb+srv://admin:<password>@cluster0.vphw7.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+const DATABASE_URL = process.env.DATABASE_URL || "mongodb+srv://admin:0631638720@cluster0.vphw7.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 mongoose.connect(DATABASE_URL, { useNewUrlParser: true, useUnifiedTopology: true })
 
 const db = mongoose.connection
